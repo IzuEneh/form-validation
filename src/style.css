@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 50vw;
+  height: 75vh;
+}
+
+form {
+  font: 1em sans-serif;
+  max-width: 320px;
+}
+
+p > label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+.error {
+  width: 100%;
+  font-size: 80%;
+  color: red;
+}
+
+.error.active {
+  padding: 0.3em;
+}
